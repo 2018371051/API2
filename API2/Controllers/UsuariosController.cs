@@ -110,7 +110,7 @@ namespace API2.Controllers
             base.Dispose(disposing);
         }
 
-        private bool DbUsuarioExists(int id)
+        public bool DbUsuarioExists(int id)
         {
             return db.DbUsuario.Count(e => e.Id == id) > 0;
         }
